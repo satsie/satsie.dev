@@ -2,7 +2,8 @@
   <base target="_blank">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <head>
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📚</text></svg>">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🥕</text></svg>">
+
     <style>
 
       a {
@@ -11,14 +12,16 @@
 
       body {
         font-family: 'Courier New', Courier, monospace;
-        color: black;
+        color: rgb(36, 83, 9);
         word-wrap: break-word;
-        background-color: #e5e5f7;
-        opacity: 0.8;
-        background-image:  linear-gradient(#e6dbff 2px, transparent 2px), linear-gradient(90deg, #e6dbff 2px, transparent 2px), linear-gradient(#e6dbff 1px, transparent 1px), linear-gradient(90deg, #e6dbff 1px, #e5e5f7 1px);
+        overflow-wrap: break-word;
+
+        /*background pattern generator: https://www.magicpattern.design/tools/css-backgrounds */
+        background-color: #f3f3ff;
+        opacity: 1;
+        background-image:  linear-gradient(#d1f4cb 2px, transparent 2px), linear-gradient(90deg, #d1f4cb 2px, transparent 2px), linear-gradient(#d1f4cb 1px, transparent 1px), linear-gradient(90deg, #d1f4cb 1px, #f3f3ff 1px);
         background-size: 50px 50px, 50px 50px, 10px 10px, 10px 10px;
         background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
-        overflow-wrap: break-word;
       }
 
       button {
@@ -34,7 +37,7 @@
 
       button:hover{
         background-color: white;
-        color: #573185;
+        color: #0b3307;
         border-color: black;
       }
 
@@ -42,6 +45,7 @@
         border: 2px dashed grey;
         display: inline-block;
         padding: 15px;
+        background-color: rgba(255, 255, 255, 0.5)
       }
 
       .row {
@@ -54,35 +58,33 @@
 <body >
     <center>
         <br>
-        <h1>Thanks for reading the All About BIPs zine!</h1>
-        <br>Want a digital copy? Download one <a href="https://technicaldifficulties.io/zines/BIPs_zine.pdf">here</a>.
-        <br>Alternatively, <a href="https://raw.githubusercontent.com/aekasitt/bip-zine/main/bips.th.pdf">Thai version 🇹🇭</a>.
+        <h1>Thanks for reading the Time to Talk Taproot zine!</h1>
+        <!-- <br>Want a digital copy? Download one <a href="https://technicaldifficulties.io/zines/BIPs_zine.pdf">here</a>. -->
 
         <br><br>
         <div class="bb-resources">
-          <br><b>Let's keep in touch.<br><br>💌 Join the <a href="https://bitcoinbytes.eo.page/m6kyc">mailing list</a> to be notified about new content like this 💌</b>
+          <br><b>Let's keep in touch.<br><br>Join the <a href="https://bitcoinbytes.eo.page/m6kyc">mailing list</a> to be notified about new content like this</b>
+          <script async src="https://eomail1.com/form/5a108abc-e46b-11ed-a0af-b744ea23625e.js" data-form="5a108abc-e46b-11ed-a0af-b744ea23625e"></script>
           <br><br>
         </div>
 
-        <br><br><br>More resources for you to continue your journey:
+        <br><br><br><b>More resources for you to continue your journey</b>
         <br><br>
 
         <div class="button-container">
             <div class="row">
-                <img src="../assets/arrow.png">
-                <a href="https://github.com/bitcoin/bips">
-                    <button type="button"><b>BIPs repository on GitHub:</b> A complete list of all BIPs</button>
+                <a href="https://bitcoinops.org/en/topics/soft-fork-activation/">
+                    <button type="button"><b>Bitcoin Optech:</b> Soft fork activations explained</button>
                 </a>
             </div>
 
             <div class="row">
-                <img src="../assets/arrow.png">
-                <a href="https://github.com/bitcoin/bips/blob/master/bip-0002.mediawiki">
-                    <button type="button"><b>BIP-002:</b> Full documentation for the BIP process.</button>
+                <a href="https://ellemouton.com/posts/taproot-prelims/">
+                    <button type="button"><b>Elle Mouton:</b> Taproot and MuSig2</button>
                 </a>
             </div>
 
-            <div class="row">
+            <!-- <div class="row">
                 <img src="../assets/arrow.png">
                 <a href="https://lists.linuxfoundation.org/mailman/listinfo/bitcoin-dev">
                     <button type="button"><b>bitcoin-dev mailing list</b></button>
@@ -108,12 +110,12 @@
                 <a href="https://forms.gle/T77ScmuyTdVRV3fv5">
                     <button type="button"><b>Leave feedback about the zine</b></button>
                 </a>
-            </div>
+            </div> -->
         </div>
         <br>
 
         <br>
-            Made with ❤️ by <a href="https://satsie.dev">satsie</a> 
+            Made with ❤️ by <a href="https://thebitcoinbytes.com">bitcoin bytes</a> 
         <br>
     </center>
 
