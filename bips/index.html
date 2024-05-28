@@ -3,73 +3,98 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <head>
     <title>Satsie's Pocket Guide to BIPs</title>
+
+    <link rel="stylesheet" href="../zines/style.css">
+    <link rel="stylesheet" href="../zines/flipbook.css">
+    <script src="../zines/flipbook.js" defer></script>
+
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📚</text></svg>">
-    <style>
 
-      a {
-        text-decoration: none;
-        color: white;
-      }
-
-      a.hover {
-        color: #feda09;
-      }
-
-      body {
-        font-family: Work Sans, sans-serif, 'Courier New', Courier, monospace;
-        color: #ed8936;
-        word-wrap: break-word;
-        background-color: black;
-        /* opacity: 0.8; */
-        /* background-image:  linear-gradient(#e6dbff 2px, transparent 2px), linear-gradient(90deg, #e6dbff 2px, transparent 2px), linear-gradient(#e6dbff 1px, transparent 1px), linear-gradient(90deg, #e6dbff 1px, #e5e5f7 1px); */
-        /* background-size: 50px 50px, 50px 50px, 10px 10px, 10px 10px; */
-        /* background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px; */
-        overflow-wrap: break-word;
-      }
-
-      button {
-        font-family: Work Sans, sans-serif, 'Courier New', Courier, monospace;
-        border: 1px solid black;
-        width: 50%;
-        padding: 10px;
-        background-color: white;
-        box-shadow: 5px 10px;
-        text-align: left;
-        vertical-align: top;
-      }
-
-      button:hover{
-        background-color: white;
-        color: #feda09;
-        border-color: black;
-      }
-
-      .row {
-        text-align: center;
-        padding: 20px;
-      }
-
-      hr {
-        width: 50%;
-      }
-
-      img.thumbnail {
-        width: 18%;
-      }
-    </style>
   </head>
 
 <body >
     <center>
         <br>
-        <h1>All About BIPs zine</h1>
+        <h1>Satsie's Pocket Guide to BIPs</h1>
         <hr>
         <a href="https://technicaldifficulties.io/zines/BIPs_Zine.pdf">
-          <img class="thumbnail" src="../zines/images/bips_thumbnail.png">
-          <br><h2>Download the PDF here</h2>
+          <br><h2>Download the printable PDF here</h2>
         </a>
-        <br>There is also a <a href="https://raw.githubusercontent.com/aekasitt/bip-zine/main/bips.th.pdf">Thai version 🇹🇭</a> made available by <a href="https://github.com/aekasitt">aekasitt</a>.
-        <br><br>Need help assembling? Check out these <a href="https://docs.google.com/document/d/1-945p189fdN8mv98YVMJJ65rrHOWbanfUoC7uHEdhOU/edit?usp=sharing">instructions</a>.
+        Need help assembling? Check out these <a href="https://docs.google.com/document/d/1-945p189fdN8mv98YVMJJ65rrHOWbanfUoC7uHEdhOU/edit?usp=sharing">instructions</a>.
+
+        <br><br>There is also a <a href="https://raw.githubusercontent.com/aekasitt/bip-zine/main/bips.th.pdf">Thai version 🇹🇭</a> made available by <a href="https://github.com/aekasitt">aekasitt</a>.
+        <br><br>
+
+
+        <!-- Flipbook -->
+        <div id="flipbook" class="flipbook">
+
+          <!-- Paper 1 -->
+          <div id="p1" class="paper">
+            <div class="front">
+              <div id="f1" class="front-content">
+                <img class="pgimg" src="../zines/images/flipbook/flipbook_bips_1.png">
+              </div>
+            </div>
+            <div class="back">
+              <div id="b1" class="back-content">
+                <img class="pgimg" src="../zines/images/flipbook/flipbook_bips_2.png">
+              </div>
+            </div>
+          </div>
+
+          <!-- Paper 2 -->
+          <div id="p2" class="paper">
+            <div class="front">
+              <div id="f2" class="front-content">
+                <img class="pgimg" src="../zines/images/flipbook/flipbook_bips_3.png">
+              </div>
+            </div>
+            <div class="back">
+              <div id="b2" class="back-content">
+                <img class="pgimg" src="../zines/images/flipbook/flipbook_bips_4.png">
+              </div>
+            </div>
+          </div>
+
+          <!-- Paper 3 -->
+          <div id="p3" class="paper">
+            <div class="front">
+              <div id="f3" class="front-content">
+                <img class="pgimg" src="../zines/images/flipbook/flipbook_bips_5.png">
+              </div>
+            </div>
+            <div class="back">
+              <div id="b3" class="back-content">
+                <img class="pgimg" src="../zines/images/flipbook/flipbook_bips_6.png">
+              </div>
+            </div>
+          </div>
+
+          <!-- Paper 4 -->
+          <div id="p4" class="paper">
+            <div class="front">
+              <div id="f4" class="front-content">
+                <img class="pgimg" src="../zines/images/flipbook/flipbook_bips_7.png">
+              </div>
+            </div>
+            <div class="back">
+              <div id="b4" class="back-content">
+                <img class="pgimg" src="../zines/images/flipbook/flipbook_bips_8.png">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <br>
+        <!-- Previous button-->
+        <button id="flipbook-prev-button">
+          Previous
+        </button>
+        <!-- Next button -->
+        <button id="flipbook-next-button">
+          Next
+        </button>
 
         <br><br><br><hr><br><h2>More resources for you to continue your journey:</h2>
         <br>

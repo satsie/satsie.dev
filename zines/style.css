@@ -1,0 +1,51 @@
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a.hover {
+    color: #feda09;
+}
+
+body {
+    font-family: Work Sans, sans-serif, 'Courier New', Courier, monospace;
+    color: #ed8936;
+    word-wrap: break-word;
+    background-color: black;
+    /* opacity: 0.8; */
+    /* background-image:  linear-gradient(#e6dbff 2px, transparent 2px), linear-gradient(90deg, #e6dbff 2px, transparent 2px), linear-gradient(#e6dbff 1px, transparent 1px), linear-gradient(90deg, #e6dbff 1px, #e5e5f7 1px); */
+    /* background-size: 50px 50px, 50px 50px, 10px 10px, 10px 10px; */
+    /* background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px; */
+    overflow-wrap: break-word;
+}
+
+button {
+    font-family: Work Sans, sans-serif, 'Courier New', Courier, monospace;
+    border: 1px solid black;
+    width: 50%;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 5px 10px;
+    text-align: left;
+    vertical-align: top;
+}
+
+button:hover{
+    background-color: white;
+    color: #feda09;
+    border-color: black;
+}
+
+.row {
+    text-align: center;
+    padding: 20px;
+}
+
+hr {
+    width: 50%;
+}
+
+img.thumbnail {
+    width: 18%;
+}
