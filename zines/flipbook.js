@@ -1,3 +1,6 @@
+// Code is from this tutorial: https://youtu.be/0kD6ff2J3BQ?si=fmXKLoFtKbld42lC
+// https://github.com/codingstar-jason/3D-Book-Tutorial-Basic-CodingStar
+
 // Refrences to DOM elements
 const prevBtn = document.querySelector("#flipbook-prev-button");
 const nextBtn = document.querySelector("#flipbook-next-button");
