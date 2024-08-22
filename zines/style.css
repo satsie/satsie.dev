@@ -5,7 +5,7 @@ a {
 }
 
 a.hover {
-    color: #feda09;
+    color: #ed8936;
 }
 
 body {
@@ -20,7 +20,7 @@ body {
     overflow-wrap: break-word;
 }
 
-button {
+button.resource-button {
     font-family: Work Sans, sans-serif, 'Courier New', Courier, monospace;
     border: 1px solid black;
     width: 50%;
@@ -31,9 +31,9 @@ button {
     vertical-align: top;
 }
 
-button:hover{
+button.resource-button:hover{
     background-color: white;
-    color: #feda09;
+    color: #ed8936;
     border-color: black;
 }
 
@@ -48,4 +48,10 @@ hr {
 
 img.thumbnail {
     width: 18%;
+}
+
+img.download_button {
+    height: 10%;
+    min-height: 85px;
+    width: 20%
 }

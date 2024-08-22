@@ -10,10 +10,45 @@
     align-items: center;
 }
 
-#flipbook-prev-button, #flipbook-next-button {
+#flipbook-prev-button {
     display: inline-block;
     width: 10%;
+    max-width: 100px;
+    min-width: 80px;
+    height: 10%;
+    min-height: 80px;
     transition: transform 0.5s;
+    background-color: transparent;
+    border-left: 5px solid transparent;
+    border-top: 0px;
+    border-right: 0px;
+    border-bottom: 0px;
+}
+
+#flipbook-next-button {
+    display: inline-block;
+    width: 10%;
+    max-width: 100px;
+    min-width: 80px;
+    height: 10%;
+    min-height: 80px;
+    transition: transform 0.5s;
+    background-color: transparent;
+    border-right: 5px solid transparent;
+    border-top: 0px;
+    border-left: 0px;
+    border-bottom: 0px;
+    max-width: 90px;
+}
+
+#flipbook-prev-button:hover {
+    border-left: 0px solid transparent;
+    border-right: 5px solid transparent;
+}
+
+#flipbook-next-button:hover {
+    border-left: 5px solid transparent;
+    border-right: 0px solid transparent;
 }
 
 .paper {
