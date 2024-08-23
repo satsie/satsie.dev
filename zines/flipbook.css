@@ -1,6 +1,7 @@
 
 .flipbook{
     width: 405px;
+    max-width: 100%;
     height: 530px;
     position: relative;
     align-items: center;
@@ -12,10 +13,8 @@
 
 #flipbook-prev-button {
     display: inline-block;
-    width: 10%;
-    max-width: 100px;
-    min-width: 80px;
-    height: 10%;
+    width: 110px;
+    height: 75px;
     min-height: 80px;
     transition: transform 0.5s;
     background-color: transparent;
@@ -27,10 +26,8 @@
 
 #flipbook-next-button {
     display: inline-block;
-    width: 10%;
-    max-width: 100px;
-    min-width: 80px;
-    height: 10%;
+    width: 110px;
+    height: 75px;
     min-height: 80px;
     transition: transform 0.5s;
     background-color: transparent;
@@ -38,7 +35,6 @@
     border-top: 0px;
     border-left: 0px;
     border-bottom: 0px;
-    max-width: 90px;
 }
 
 #flipbook-prev-button:hover {
