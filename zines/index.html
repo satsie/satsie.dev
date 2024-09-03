@@ -12,6 +12,10 @@
         width: 55%;
       }
 
+      img.topics_header {
+        width: 50%;
+      }
+
       img.order_copies_button, img.donations_memo, img.herecomesbitcoin_memo {
         width: 25%;
       }
@@ -20,8 +24,19 @@
         width: 70%;
       }
 
-      img.bips, img.taproot, img.sv2, img.herecomesbitcoin {
+      img.bips, img.taproot, img.sv2, img.payjoin, img.herecomesbitcoin {
         width: 15%;
+        border-top: 0px solid transparent;
+        border-bottom: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-left: 0px solid transparent;
+      }
+
+      img.bips:hover, img.taproot:hover, img.sv2:hover, img.payjoin:hover {
+        border-left: 5px solid transparent;
+        border-right: 0px solid transparent;
+        border-top: 5px solid transparent;
+        border-bottom: 0px solid transparent;
       }
 
       div.btcpay_div {
@@ -36,21 +51,18 @@
 
   <body bgcolor="black">
     <center>
-      <img class="title" src="images/zines_title.png">
+      <img class="title" src="images/zines_title2.png">
       <br>
       <img class="header_img" src="images/bips_example.jpg"><br><br>
       <img class="usage_memo" src="images/usage_memo.png"><br>
       <img class="instructions" src="images/instructions.png">
-      <br>
-      <a href="../bips/index.html">
-        <img class="bips" src="images/bips_thumbnail.png">
-      </a>
-      <a href="taproot.html">
-        <img class="taproot" src="images/taproot_thumbnail.png">
-      </a>
-      <a href="sv2.html">
-        <img class="sv2" src="images/sv2_thumbnail.png">
-      </a>
+      <br><br><br><br><br>
+      <img class="topics_header" src="images/topics_header.png">
+      <br><br>
+      <a href="../bips/index.html"><img class="bips" src="images/bips_thumbnail.png"></a>
+      <a href="taproot.html"><img class="taproot" src="images/taproot_thumbnail.png"></a>
+      <a href="sv2.html"><img class="sv2" src="images/sv2_thumbnail.png"></a>
+      <a href="payjoin.html"><img class="sv2" src="images/payjoin_thumbnail.jpg"></a>
 
       <br><br>
       <br><br>
