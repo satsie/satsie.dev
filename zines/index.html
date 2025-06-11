@@ -1,10 +1,12 @@
+<!-- use ctrl + shift + v to preview in VSCode (uses the HTML Preview extension)-->
+
 <html>
   <head>
     <title>satsie.dev</title>
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧡</text></svg>">
 
     <style>
-      img.title, img.usage_memo, img.header_img {
+      img.title, img.usage_memo, img.header_img, img.collaborations_banner {
         width: 40%;
       }
 
@@ -24,7 +26,7 @@
         width: 70%;
       }
 
-      img.bips, img.taproot, img.sv2, img.payjoin, img.herecomesbitcoin {
+      img.zine_thumbnail, img.herecomesbitcoin {
         width: 15%;
         border-top: 0px solid transparent;
         border-bottom: 5px solid transparent;
@@ -32,7 +34,7 @@
         border-left: 0px solid transparent;
       }
 
-      img.bips:hover, img.taproot:hover, img.sv2:hover, img.payjoin:hover {
+      img.zine_thumbnail:hover {
         border-left: 5px solid transparent;
         border-right: 0px solid transparent;
         border-top: 5px solid transparent;
@@ -62,14 +64,31 @@
       <img class="instructions" src="images/instructions.png">
       <br><br><br><br><br>
       <img class="topics_header" src="images/topics_header.png">
+
+      <!-- zine list -->
       <br><br>
-      <a href="../bips/index.html"><img class="bips" src="images/bips_thumbnail.png"></a>
-      <a href="taproot.html"><img class="taproot" src="images/taproot_thumbnail.png"></a>
-      <a href="sv2.html"><img class="sv2" src="images/sv2_thumbnail.png"></a>
-      <a href="payjoin.html"><img class="sv2" src="images/payjoin_thumbnail.jpg"></a>
+      <a href="../bips/index.html"><img class="zine_thumbnail" src="images/bips_thumbnail.png"></a>
+      <a href="taproot.html"><img class="zine_thumbnail" src="images/taproot_thumbnail.png"></a>
+      <a href="sv2.html"><img class="zine_thumbnail" src="images/sv2_thumbnail.png"></a>
+      <br>
+      <a href="payjoin.html"><img class="zine_thumbnail" src="images/payjoin_thumbnail.jpg"></a>
+      <a href="silentpayments.html"><img class="zine_thumbnail" src="images/silentpayments_thumbnail.png"></a>
+
+      <!-- collaborations-->
+      <br>
+      <img class="collaborations_banner" src="images/collaborations_banner.png">
+      <br>
+      <a href="https://aekasitt.github.io/zines#bitvm"><img class="zine_thumbnail" src="images/collabs_gurusgazette_bitvm_thumbnail.png"></a>
+      <a href="collabs/yashrajsilentpaymentsux.html"><img class="zine_thumbnail" src="images/collabs_yashraj_silentpayments_thumbnail.png"></a>
+
 
       <br><br>
       <br><br>
+
+      <h1>
+        Thanks to this project by aekasitt, translations are available <a href="https://aekasitt.github.io/zines/">here</a>. Contributions are welcome!
+      </h1>
+
       <!-- <a href="https://forms.gle/FuagFmyFVCm9NPbEA">
         <img class="order_copies_button" src="images/order_copies_button.png">
       </a> -->

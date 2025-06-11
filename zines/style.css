@@ -51,7 +51,7 @@ img.thumbnail {
     width: 18%;
 }
 
-img.download_button {
+img.download_button, img.home_button {
     width: 20%;
     min-width: 300px;
     border-top: 0px solid transparent;
@@ -60,7 +60,7 @@ img.download_button {
     border-left: 0px solid transparent;
 }
 
-img.download_button:hover {
+img.download_button:hover, img.home_button:hover {
     border-left: 5px solid transparent;
     border-right: 0px solid transparent;
     border-top: 5px solid transparent;
