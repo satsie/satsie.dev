@@ -49,23 +49,46 @@ let currentLocation = 1;
 let numOfPapers = 4;
 let maxLocation = numOfPapers + 1;
 
-function openBook() {
-    book.style.transform = "translateX(50%)";
-}
+// Should only one page be shown at a time? Yes if this is a narrow screen (i.e. mobile)
+// Keep this breakpoint in sync with flipbook.css
+const singlePageQuery = window.matchMedia("(max-width: 599px)");
+singlePageQuery.addEventListener("change", positionBook);
 
-function closeBook(isAtBeginning) {
-    if (isAtBeginning) {
-        book.style.transform = "translateX(0%)";
+// Single page view only: are we looking at the right or left page?
+let showingRightPage = false;
+
+// Slide the book so the page(s) we want are centered on the screen
+function positionBook() {
+    let offset;
+
+    if (currentLocation == 1) {
+        // front cover
+        offset = "0%";
+    } else if (currentLocation == maxLocation) {
+        // back cover
+        offset = "100%"; 
+    } else if (singlePageQuery.matches) {
+        // device is too small and only one page can be shown at a time
+        offset = showingRightPage ? "0%" : "100%";
     } else {
-        book.style.transform = "translateX(100%)";
+        // normal desktop - show both pages in spread
+        offset = "50%";
     }
+
+    book.style.transform = `translateX(${offset})`;
 }
 
 function goNextPage() {
+    if (singlePageQuery.matches && currentLocation > 1 && currentLocation < maxLocation && !showingRightPage) {
+        // left page of the spread is showing, so just slide over to the right page
+        showingRightPage = true;
+        positionBook();
+        return;
+    }
+
     if (currentLocation < maxLocation) {
         switch(currentLocation){
             case 1:
-                openBook();
                 paper1.classList.add("flipped");
                 paper1.style.zIndex = 1;
                 break;
@@ -80,20 +103,27 @@ function goNextPage() {
             case 4:
                 paper4.classList.add("flipped");
                 paper4.style.zIndex = 4;
-                closeBook(false);
                 break;
             default:
                 throw new Error("Unknown page state");
         }
         currentLocation++;
+        showingRightPage = false //a page flip always lands on the left page of the next spread
+        positionBook();
     }
 }
 
 function goPrevPage() {
+    if (singlePageQuery.matches && currentLocation > 1 && currentLocation < maxLocation && showingRightPage){
+        // Right page of the spread is showing, so just slide back to the left page
+        showingRightPage = false;
+        positionBook();
+        return;
+    }
+
     if (currentLocation > 1) {
         switch(currentLocation) {
             case 2:
-                closeBook(true);
                 paper1.classList.remove("flipped");
                 paper1.style.zIndex = 4;
                 break;
@@ -106,13 +136,14 @@ function goPrevPage() {
                 paper3.style.zIndex = 2;
                 break;
             case 5:
-                openBook();
                 paper4.classList.remove("flipped");
                 paper4.style.zIndex = 1;
                 break;
             default:
-                throw new Error("Unknown page state");  
+                throw new Error("Unknown page state");
         }
         currentLocation--;
+        showingRightPage = true; // flipping back always lands on the right page of the previous spread
+        positionBook();
     }
 }
