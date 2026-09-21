@@ -6,6 +6,34 @@ const prevBtn = document.querySelector("#flipbook-prev-button");
 const nextBtn = document.querySelector("#flipbook-next-button");
 const book = document.querySelector("#flipbook");
 
+// Build the pages. The flipbook is always 8 pages (4 papers, front and back)
+// The images for each page are named flipbook_<some_topic>_1.png ... flipbook_<some_topic>_8.png
+const NUM_PAGES = 8;
+const pageImagePrefix = book.dataset.pageImagePrefix;
+
+for (let i = 1; i <= NUM_PAGES / 2; i++) {
+    const frontImage = `${pageImagePrefix}${2 * i - 1}.png`;
+    const backImage = `${pageImagePrefix}${2 * i}.png`;
+
+    book.insertAdjacentHTML("beforeend", `
+        <!-- Paper ${i} -->
+        <div id="p${i}" class="paper">
+            <div class="front">
+                <div id="f${i}" class="front-content">
+                    <img class="pgimg" src="${frontImage}">
+                </div>
+            </div>
+            <div class="back">
+                <div id="b${i}" class="back-content">
+                    <img class="pgimg" src="${backImage}">
+                </div>
+            </div>
+        </div>
+    `);
+}
+
+
+
 const paper1 = document.querySelector("#p1");
 const paper2 = document.querySelector("#p2");
 const paper3 = document.querySelector("#p3");
